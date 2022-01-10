@@ -20,11 +20,11 @@ function onInputChange(event) {
     function onCreateBtnClick(event) {
       createBoxes(amount);
     }
-  // event.currentTarget.reset();
+  event.currentTarget.reset();
   console.log(event.currentTarget.value);
 }
 
-
+ 
 
 function createBoxes(amount){
   const boxesArrey = [];
