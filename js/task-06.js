@@ -8,8 +8,9 @@ function onInputBlur(event) {
     if (event.currentTarget.value.split("").length === Number(inputEl.getAttribute('data-length'))) {
         inputEl.classList.add('valid');
         inputEl.classList.remove('invalid');
+        return
     }
-    else inputEl.classList.add('invalid');  
+        inputEl.classList.add('invalid');  
         inputEl.classList.remove('valid');
 
 }
