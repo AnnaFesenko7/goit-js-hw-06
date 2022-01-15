@@ -9,13 +9,14 @@ function onFormSubmit(event) {
     const password = formElements.password.value;
     if (!mail || !password) {
        const message = "Все поля должны быть заполнены.";
-       alert(message);
+        alert(message);
+        return
    }
-    const formData = {
+   const formData = {
         mail,
         password,
     };
     console.log(formData);
    
-     event.currentTarget.reset();
+    //  event.currentTarget.reset();
 }
