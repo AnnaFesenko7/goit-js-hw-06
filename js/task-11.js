@@ -6,6 +6,11 @@ refs.field.addEventListener("click", findScreenCoords);
 console.log(ball);
 
 function findScreenCoords(mouseEvent) {
+  console.log("clientX", mouseEvent.clientX);
+  console.log("pageX ", mouseEvent.pageX);
+  console.log("offsetX", mouseEvent.offsetX);
+  console.log("screenX", mouseEvent.screenX);
+
   const fieldCoords = refs.field.getBoundingClientRect();
   let left =
     mouseEvent.clientX -
